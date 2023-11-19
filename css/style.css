@@ -46,6 +46,7 @@
     border-radius: 20px;
     padding: 10px 20px;
     font-size: 13px;
+    display: inline-block;
 }
 
 .container-nav{
@@ -77,7 +78,7 @@ header{
     width: calc(100% - 250px);
     height: 80px;
     text-align: end;
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 
@@ -107,7 +108,10 @@ header{
     font-weight: 600;
 }
 
-
+.perte{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
 
 .recently-played h3{
     color: white;
@@ -134,6 +138,32 @@ header{
     font-size: 10px;
     margin-top: 5px;
 }
+
+.perte h3, .popular-artist h3{
+    color: white;
+    margin-top: 20px;
+    font-size: 23px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.perte p, .popular-artist p{
+    color: var(--colorsubtitle);
+    margin-left: 10px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.imgcircle img{
+    border-radius: 50%;
+}
+
+.popular-artist{
+    margin-bottom: 40px;
+}
+
+
 
 /*
 
