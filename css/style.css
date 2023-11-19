@@ -25,7 +25,7 @@
 
 .main-container-flex{
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     background-color:var(--maincolor);
 }
 
@@ -108,6 +108,11 @@ header{
     font-weight: 600;
 }
 
+.recently-played{
+    margin-top: 40px;
+}
+
+
 .perte{
     margin-top: 40px;
     margin-bottom: 30px;
@@ -172,9 +177,161 @@ header{
 */
 
 footer{
-    height: 100px;
+    height: 90px;
     background-color:#282828;
 }
+
+.dashboard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dashboard > *{
+    width: calc(100% / 3);
+}
+
+
+.idtrack{
+    display: flex;
+    align-items: center;
+}
+
+.idtrack div:nth-child(1),
+.idtrack div:nth-child(2){
+    margin-right: 20px;
+}
+
+.idtrack div:nth-child(3){
+    margin-left: 20px;
+}
+
+.idtrack img{
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+.idtrack div:nth-child(2) h5 a{
+    color: white;
+    text-decoration: none;
+}
+
+.idtrack div:nth-child(2) p a{
+    color: var(--colorsubtitle);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.idtrack div:nth-child(3) i{
+    color: white;
+    font-size: 17px;
+    margin-right: 15px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon ul li{
+    list-style: none;
+    color: white;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.icon ul li i:not(.fa-circle-play){
+    font-size: 22px;
+}
+
+.fa-circle-play{
+    font-size: 30px;
+}
+
+.barra-minutaggio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.barra-minutaggio div:first-child, .barra-minutaggio div:last-child{
+    width: 10%;
+}
+
+.barra-minutaggio div:nth-child(2){
+    width: 80%;
+}
+
+.end-time{
+    text-align: end;
+}
+
+.barra-minutaggio p{
+    color: white;
+    font-size: 600;
+    font-size: 10px;
+}
+
+.barratop{
+    width: 20%;
+    border: 2px solid;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    top: 4px;
+}
+
+
+.barrabottom{
+    width: 100%;
+    color: #535353;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.last-control{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+.last-control > *{
+    width: 30%;
+}
+
+.last-control i{
+    color: white;
+    margin: 0 5px;
+}
+
+.last-control div:first-child{
+    text-align: end;
+    margin: 0 10px;
+}
+
+.volumebottom{
+    width: 60%;
+    color: #535353;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.volumetop{
+    width: 10%;
+    border: 2px solid;
+    color: white;
+    position: absolute;
+    top: 8px;
+    border-radius: 20px;
+}
+
+
 
 
 /*
