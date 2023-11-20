@@ -54,10 +54,7 @@ aside{
     display: inline-block;
 }
 
-.container-nav{
-    width: calc(100% - 250px);
-    margin: 0 auto;
-}
+
 
 .cards{
     display: flex;
@@ -100,6 +97,7 @@ header{
 
 .logo img:first-child{
     width: 80%;
+    display: block;
 }
 
 .logo img:last-child{
@@ -240,6 +238,7 @@ header{
     margin-right: 15px;
     font-size: 13px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .recently-played{
@@ -461,18 +460,108 @@ footer{
     margin-right: 20px;
 }
 
-/*
+/* 
 
-   DEBUG
+    MEDIA QUERY
 
 */
 
-/* .cards div{
-    background-color: yellow;
-    border: 1px dashed black;
-    height: 200px;
-    width: calc(200px - 20px);
-    margin: 0 10px;
-} */
+/* PRIMO BREAKPOINT */
+@media screen and (max-width: 1100px){
+        .cards > *{
+            width: calc(100% / 4 - 40px);
+            margin: 10px 10px;
+        }
+    
+}
+
+/* SECONDO BREAKPOINT */
+@media  screen and (max-width: 700px){
+    .cards > *{
+        width: calc(100% / 2 - 40px);
+    }
+    
+    .id-track div:first-child{
+        width: 40%;
+    }
+
+}
 
 
+/* TERZO BREAKPOINT */
+@media screen and (max-width: 600px){
+    
+    .nav1 ul li span{
+        display: none;
+    }
+
+    .logo{
+        padding: 10px 10px;
+    }
+
+    .nav1 nav ul{
+        padding: 0px 10px;
+    }
+
+    .nav1 ul li img{
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    .playlist, .newplaylist{
+        display: none;
+    }
+
+    .asidebottom .download span{
+        display: none;
+    }
+
+    .asidebottom{
+        padding: 0;
+        flex-grow: 1;
+    }
+
+    .asidebottom hr{
+        display: none;
+    }
+
+
+    .asidebottom .user span{
+        display: none;
+    }
+
+    .asidebottom .user img{
+        width: 100%;
+    }
+
+    .asidebottom .download img{
+        width: 100%;
+    }
+
+    .main-content{
+        width: calc(100% - 50px);
+        height: 100%;
+    }
+
+    aside{
+        width: 50px;
+        display: flex;
+    }
+    
+    .logo img:last-child{
+        display: block;
+        width: 100%;
+    }
+    
+    .logo img:first-child{
+        display: none;
+    }
+
+    header{
+        width: calc(100% - 50px);
+    }
+
+    .comandi-dash div ul li{
+        margin-right: 15px;
+    }
+}
